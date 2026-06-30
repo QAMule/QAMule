@@ -79,7 +79,7 @@ qamule pause watch --session-id <session-id>
 Repeat `watch` and `resume` until `watch` reports `finish`. If the run should stop at a pause, use:
 
 ```bash
-qamule pause abort <pause_id> --session-id <session-id> --message "stop run" --image screenshot.png
+qamule pause abort <pause_id> --session-id <session-id> --message "stop run" --image screenshot.jpg
 ```
 
 ## Report CLI
