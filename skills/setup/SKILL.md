@@ -22,7 +22,7 @@ This creates the base UV project scaffold.
 ### 2. Add Dependencies
 
 ```bash
-uv add pytest "pytest-qamule>=0.2.0" "uiautomator2>=3.7.0"
+uv add pytest "pytest-qamule>=0.2.0" "uiautomator2>=3.7.0" "qamule-trajectory>=0.1.0"
 ```
 
 ### 3. Install Dependencies
