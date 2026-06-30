@@ -1,0 +1,20 @@
+{
+    "name": "qamule",
+    "metadata": {
+        "description": "QAMule Marketplace",
+        "version": "1.0.0"
+    },
+    "owner": {
+        "name": "QAMule",
+        "email": "QAMule@icloud.com"
+    },
+      "plugins": [
+    {
+      "name": "qamule",
+      "source": {
+        "source": "github",
+        "repo": "qamule/qamule"
+      }
+    }
+  ]
+}
