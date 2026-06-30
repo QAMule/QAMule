@@ -140,13 +140,13 @@ Ask:
 
 ## Structured Diagnosis Template
 
-Use a concise structured reason in this shape:
+Prefer a brief diagnosis in natural language. State the judgment and the reasoning that supports it, then name the next action when useful.
 
-`observed=<what failed or blocked the objective>; impact=<how it affected the objective>; classification=<one class>; likely_owner=<test|automation|environment|product|external|data|unknown>; evidence=<key evidence used>; next_action=<recommended follow-up>`
+Avoid requiring fixed fields unless the caller explicitly asks for a structured format.
 
 Example:
 
-`observed=login screen appeared before the checkout confirmation step; impact=confirmation assertion could not run against the intended page; classification=precondition_missing; likely_owner=automation; evidence=session-dependent flow reached auth gate before target screen; next_action=restore authenticated session in shared setup or explicitly model the login branch`
+`This is most likely a missing authenticated-session precondition: the flow reached the login screen before checkout confirmation, so the confirmation assertion could not run against the intended page. Restore authenticated session in shared setup, or explicitly model the login branch if it is expected for this path.`
 
 ## Knowledge Write-Back Rule
 

@@ -76,6 +76,11 @@ qamule pause watch --session-id <session-id>
   `qamule pause resume <pause_id> --session-id <session-id> --message "checked failure state" --image image.jpg`
 - `finish`: the run is complete; inspect logs or report, and do not resume anything.
 
+**Note**:
+- Image is not required for resume, if the image provided is enough to show the state of the app at the pause.
+- Do not save the image to the `session-id` directory; `--image` will auto convert it to base64 for the report.
+- Use `.jpg` to reduce file size, do not use `.png`.
+
 Repeat `watch` and `resume` until `watch` reports `finish`. If the run should stop at a pause, use:
 
 ```bash
