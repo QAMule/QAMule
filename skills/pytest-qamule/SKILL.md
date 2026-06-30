@@ -2,7 +2,7 @@
 name: pytest-qamule
 description: >
   Use pytest-qamule to run QAMule tests in a pytest environment. Use when running QAMule tests in a pytest environment, or when writing new tests for pytest-qamule.
-user-invocable: true
+user-invocable: false
 ---
 
 # Pytest QAMule
